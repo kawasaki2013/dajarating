@@ -22,6 +22,11 @@ def dajarep(text):
     def fixText(text):
         text=text.replace(u"ッ", u"")
         text=text.replace(u"ー", u"")
+        text=text.replace(u"、", u"")
+        text=text.replace(u",", u"")
+        text=text.replace(u" ", u"")
+        text=text.replace(u"　", u"")
+
         return text
 
     tokens=TOKENIZER.tokenize(text)
