@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
-__author__ = 'gabill'
 import re
 
 TOKENIZER=None
 
 def dajarep(text):
+    u"""
+    与えられた文字列にダジャレが含まれていた場合、該当部分の読みを返す。
+    """
 
     def fixWord(text):
         text=text.replace(u"ッ", u"[ツッ]?")
