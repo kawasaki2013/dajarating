@@ -2,4 +2,4 @@
 import dajarep
 from janome.tokenizer import Tokenizer
 
-dajarep.TOKENIZER=Tokenizer()
+dajarep.TOKENIZER = Tokenizer()
